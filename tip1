@@ -1,0 +1,16 @@
+Position的妙用
+      如果你设置了一个div
+      向下面这样
+HTML
+     <div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+   </div>
+希望所有的item变成父元素div的80%的宽长。
+CSS
+  .item{
+        width:80%;
+        position:relative;//通过设置相对位置，可以实现用父类百分比宽度的效果
+ }
+  
