@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="GBK">
+  <meta name="Generator" content="EditPlus">
+  <meta name="Author" content="oneslide">
+  <meta name="Keywords" content="load">
+  <meta name="Description" content="load animation">
+  <title>旋转的加载动画</title>
+  <style>
+  body,html{
+       background-color:rgba(20,30,45,0.8);
+       display:-webkit-box;/**盒子的展示方式，盒子为块的样式展示。也就是说，一个元素所影响的定位会仅限于自己的尺寸。如果没有，元素所占的一行背景将加深。**/
+
+	   -webkit-box-align:center;/**上下居中**/
+	   -webkit-box-pack:center;  /**    左右居中**/
+	     width:100%;
+	     height: 100%;
+	
+		
+  }
+  #container{
+         margin:0 auto;  /*让盒子左右居中*/
+	    
+  }
+  .load{
+      border:2px solid white;
+      border-top:2px solid black;
+	  -webkit-animation:spin 1s  linear infinite;
+      width:75px;
+	  height:75px;
+	  border-radius:50%;
+  }
+   @-webkit-keyframes spin{
+        to{
+        -webkit-transform:rotate(360deg);
+        }
+  }
+  </style>
+
+ </head>
+ <body>
+          <div id="container">
+		        <div class="load"></div>
+		  </div>
+ </body>
+</html>
